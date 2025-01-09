@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+    {
+        "src": "index.js",
+        "use": "@vercel/node"
+    }
+    ],
+    "routes": [
+    {
+        "src": "/api/(.*)",
+        "dest": "index.js"
+    },
+    {
+        "src": "/(.*)",
+        "dest": "index.js"
+    }
+    ],
+    "env": {
+    "MONGO_URI": "mongodb+srv://ibrahim904072:MrzQFoPSS84RHBDB@user.r8o7v.mongodb.net/?retryWrites=true&w=majority&appName=user",
+    "JWT_SECRET": "your_jwt_secret_key",
+    "PORT": "5000"
+    }
+}
