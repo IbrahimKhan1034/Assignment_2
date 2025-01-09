@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect('mongodb+srv://23pwbcs0960:p84u5IrTIeR9HR8M@ibrahimproject.avsat.mongodb.net/')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
